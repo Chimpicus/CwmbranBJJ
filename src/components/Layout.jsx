@@ -1,9 +1,9 @@
-import Navbar from './Navbar';
+import Header from './Header';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar></Navbar>
+      <Header />
       {children}
     </>
   );

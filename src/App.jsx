@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 function App() {
   return (
     <>
-      <div className='flex justify-center h-screen w-screen'>
+      <div className='w-screen'>
         <Layout></Layout>
       </div>
     </>
