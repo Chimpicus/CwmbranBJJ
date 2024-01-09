@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-const NavLinks = () => {
+export const NavLinks = () => {
   const navLinksStyles = 'text-gray-50 hover:text-gray-400 py-2';
   return (
     <>
@@ -25,13 +25,13 @@ const NavLinks = () => {
       <NavLink className={navLinksStyles} to='/contact'>
         Contact
       </NavLink>
-      <div className='flex justify-around items-center w-1/5'>
-        <a href=''>
+      <div className='flex justify-between items-center'>
+        <a href='' className='px-4'>
           <button>
             <FontAwesomeIcon icon={faFacebookF} />{' '}
           </button>
         </a>
-        <a href=''>
+        <a href='' className='px-4'>
           <button>
             {' '}
             <FontAwesomeIcon icon={faInstagram} />{' '}
